@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>いろんな表情のめいちゃん | 特別コンテンツ</title>
+    <meta
+      name="description"
+      content="ポップな世界観で楽しむ『いろんな表情のめいちゃん』特設ページ。お気に入りの表情を選んでシェア！"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">コンテンツへスキップ</a>
+
+    <header class="hero">
+      <nav class="hero-nav" aria-label="ページ内メニュー">
+        <a href="#expressions">表情一覧</a>
+        <a href="#vote">推し投票</a>
+        <a href="#share">シェア</a>
+      </nav>
+
+      <p class="tag">SPECIAL CONTENT</p>
+      <h1>いろんな表情の<br />めいちゃん</h1>
+      <p class="lead">
+        ハンマー片手に、今日もめいちゃんは全力！<br />
+        うれしい・びっくり・ぷんぷん…気分で変わるめいちゃんを集めました。
+      </p>
+      <div class="hero-cta-row">
+        <a class="cta" href="#expressions">表情をみる</a>
+        <a class="cta ghost" href="#vote">推しをえらぶ</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section-head">
+        <h2>今日はどのめいちゃん？</h2>
+        <p>気分に合わせて選べる、6つの表情ラインナップ。</p>
+      </section>
+
+      <section id="expressions" class="grid" aria-label="めいちゃんの表情一覧">
+        <article class="card happy" data-expression="ごきげん" data-line="るん♪">
+          <h3>ごきげん</h3>
+          <p>にこっと笑顔でぴょんっ！</p>
+          <span>るん♪</span>
+        </article>
+        <article class="card surprise" data-expression="びっくり" data-line="えっ!?">
+          <h3>びっくり</h3>
+          <p>急展開に目がまんまる。</p>
+          <span>えっ!?</span>
+        </article>
+        <article class="card angry" data-expression="ぷんぷん" data-line="BAN!">
+          <h3>ぷんぷん</h3>
+          <p>むむっ…ハンマー発動！</p>
+          <span>BAN!</span>
+        </article>
+        <article class="card proud" data-expression="どやっ" data-line="どやぁ">
+          <h3>どやっ</h3>
+          <p>キラッと自信の決め顔。</p>
+          <span>どやぁ</span>
+        </article>
+        <article class="card sad" data-expression="しょんぼり" data-line="しゅん…">
+          <h3>しょんぼり</h3>
+          <p>ちょっとだけ元気充電中。</p>
+          <span>しゅん…</span>
+        </article>
+        <article class="card cheer" data-expression="全力応援" data-line="がんばれー！">
+          <h3>全力応援</h3>
+          <p>ジャンプであなたを後押し！</p>
+          <span>がんばれー！</span>
+        </article>
+      </section>
+
+      <section id="vote" class="panel">
+        <h2>推し表情ミニ投票</h2>
+        <p>気に入った表情を選ぶと、下に応援メッセージが出るよ！</p>
+        <form id="vote-form" class="vote-grid" aria-label="推し表情ミニ投票フォーム">
+          <label><input type="radio" name="fav" value="ごきげん" /> ごきげん</label>
+          <label><input type="radio" name="fav" value="びっくり" /> びっくり</label>
+          <label><input type="radio" name="fav" value="ぷんぷん" /> ぷんぷん</label>
+          <label><input type="radio" name="fav" value="どやっ" /> どやっ</label>
+          <label><input type="radio" name="fav" value="しょんぼり" /> しょんぼり</label>
+          <label><input type="radio" name="fav" value="全力応援" /> 全力応援</label>
+        </form>
+        <p id="vote-result" class="vote-result" aria-live="polite">まだ選ばれていません。</p>
+      </section>
+
+      <section id="share" class="message">
+        <h2>推し表情をシェアしよう！</h2>
+        <p>
+          <strong>#めいちゃんの表情</strong> をつけて投稿してね。<br />
+          次回は季節限定バージョンが登場…？
+        </p>
+        <button id="copy-btn" class="copy-btn" type="button">ハッシュタグをコピー</button>
+      </section>
+    </main>
+
+    <footer>
+      <small>© Fan content page inspired by discope.net visual vibe.</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+:root {
+  --bg: #fff7f9;
+  --ink: #26243a;
+  --pink: #ff4fa3;
+  --purple: #7062ff;
+  --orange: #ff7d6e;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 15% 20%, #ffe6f2 0 15%, transparent 15%),
+    radial-gradient(circle at 85% 15%, #e9e6ff 0 13%, transparent 13%),
+    radial-gradient(circle at 80% 80%, #e4f7ff 0 12%, transparent 12%),
+    var(--bg);
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+  z-index: 99;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.hero-nav a {
+  color: var(--purple);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #fff;
+  border: 2px solid var(--purple);
+  border-radius: 999px;
+  color: var(--purple);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin: 1rem 0;
+}
+
+.lead {
+  max-width: 44rem;
+  margin: 0 auto 1.5rem;
+  line-height: 1.8;
+}
+
+.hero-cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--pink), var(--orange));
+  color: #fff;
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cta.ghost {
+  background: #fff;
+  color: var(--purple);
+  border: 2px solid #d7d0ff;
+}
+
+main {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 1rem;
+  border: 3px solid #1f1f1f20;
+  box-shadow: 0 8px 0 #1f1f1f15;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  margin-top: 0.2rem;
+}
+
+.card p {
+  min-height: 2.8em;
+}
+
+.card span {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 700;
+  background: #f4f4f4;
+}
+
+.happy { border-color: #ffd25f; }
+.surprise { border-color: #6ecaff; }
+.angry { border-color: #ff6a6a; }
+.proud { border-color: #9f88ff; }
+.sad { border-color: #92a5bf; }
+.cheer { border-color: #ff85c4; }
+
+.panel,
+.message {
+  margin: 2rem 0;
+  padding: 1.4rem;
+  border-radius: 20px;
+  background: #fff;
+  border: 2px dashed #d6caef;
+}
+
+.vote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.6rem;
+}
+
+.vote-grid label {
+  display: block;
+  background: #f8f7ff;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.vote-result {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.copy-btn {
+  background: #26243a;
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  color: #666;
+}
