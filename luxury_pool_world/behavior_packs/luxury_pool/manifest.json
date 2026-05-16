@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Luxury Pool Builder",
+    "description": "Summon command functions to build a luxury pool resort.",
+    "uuid": "0a6de015-8f4c-42f1-8f53-8a795aefbd88",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "6a951957-2f52-452c-8685-bba96c6e03a0",
+      "version": [1, 0, 0]
+    }
+  ]
+}
